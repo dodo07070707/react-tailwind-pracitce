@@ -3,29 +3,30 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <header className="flex justify-between w-full items-center pl-10 pr-10 pt-16 pb-3">
-        <a href="/" className="flex items-center">
-          <img src="assets/logo1.png" className="w-10 h-auto pr-2"></img>
-          <p className="text-mainblue">deplois</p>
+    <div className="app">
+      <header className="header">
+        <a href="/" className="logo-wrap">
+          <img src="assets/logo1.png" className="logo" />
+          <p className="logo-text">deplois</p>
         </a>
-        <nav className="flex space-x-6">
-          <a className="hover:drop-shadow-xl/19" href="/">
+        <nav className="nav">
+          <a href="/" className="nav-item">
             Home
           </a>
-          <a className="hover:drop-shadow-x1/19" href="/about">
+          <a href="/about" className="nav-item">
             About
           </a>
-          <a className="hover:drop-shadow-x1/19" href="/contact">
+          <a href="/contact" className="nav-item">
             Contact
           </a>
         </nav>
       </header>
-      <div className="border-b border-gray-200 ml-8 mr-8"></div>
-      {/* Main Content */}
-      <main className="max-w-6xl mx-auto mt-3 p-4 ml-10 mr-10 bg-white shadow rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">메인 콘텐츠</h2>
-        <p className="text-gray-700">여기에 원하는 내용을 넣으면 됩니다.</p>
+
+      <div className="divider"></div>
+
+      <main className="main">
+        <h2 className="main-title">메인 콘텐츠</h2>
+        <p className="main-text">여기에 원하는 내용을 넣으면 됩니다.</p>
       </main>
     </div>
   );
