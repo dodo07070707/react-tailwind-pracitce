@@ -7,7 +7,7 @@ export default function App() {
       <header className="flex justify-between w-full items-center pl-10 pr-10 pt-16 pb-3">
         <a href="/" className="flex items-center">
           <img src="assets/logo1.png" className="w-10 h-auto pr-2"></img>
-          <p className="">deplois</p>
+          <p className="text-mainblue">deplois</p>
         </a>
         <nav className="flex space-x-6">
           <a className="hover:drop-shadow-xl/19" href="/">
