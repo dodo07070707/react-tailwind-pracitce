@@ -67,11 +67,13 @@ export const MainWrapper = styled.main`
 export const ShoeMenuMain = styled.div`
   font-size: 30px;
   font-family: "Paperlogy";
-  font-weight: 600;
+  font-weight: 800;
+  margin-bottom: 20px;
 `;
 
 export const ShoeImageRow = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+  margin-bottom: 50px;
 `;
