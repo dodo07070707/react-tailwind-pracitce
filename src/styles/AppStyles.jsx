@@ -67,7 +67,8 @@ export const MainWrapper = styled.main`
 export const ShoeMenuMain = styled.div`
   font-size: 30px;
   font-family: "Paperlogy";
-  font-weight: 800;
+  font-weight: 700;
+  margin-top: 10px;
   margin-bottom: 20px;
 `;
 

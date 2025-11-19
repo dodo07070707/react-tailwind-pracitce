@@ -18,6 +18,7 @@ import { useState } from "react";
 
 import bg from "../public/assets/bg.png";
 import logo from "../public/assets/logo1.svg";
+import { Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
   const [shoes] = useState(data);
@@ -30,9 +31,15 @@ export default function App() {
         </LogoWrap>
 
         <Nav>
-          <NavItem href="/">Home</NavItem>
-          <NavItem href="/about">About</NavItem>
-          <NavItem href="/contact">Contact</NavItem>
+          <Link to="/">
+            <NavItem>Home</NavItem>
+          </Link>
+          <Link to="/about">
+            <NavItem>About</NavItem>
+          </Link>
+          <Link to="/search">
+            <NavItem>Contact</NavItem>
+          </Link>
         </Nav>
       </Header>
 
@@ -46,7 +53,10 @@ export default function App() {
             <Product
               key={i}
               title={item.title}
-              content={item.content}
+              price={
+                item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
+                "₩"
+              }
               img={`https://codingapple1.github.io/shop/shoes${i + 1}.jpg`}
             />
           ))}

@@ -22,15 +22,15 @@ const ProductContent = styled.p`
   margin-top: 8px;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.8px;
 `;
 
-export default function Product({ title, content, img }) {
+export default function Product({ title, price, img }) {
   return (
     <SingleImage>
       <ProductImg src={img} />
       <ProductTitle>{title}</ProductTitle>
-      <ProductContent>{content}</ProductContent>
+      <ProductContent>{price}</ProductContent>
     </SingleImage>
   );
 }
